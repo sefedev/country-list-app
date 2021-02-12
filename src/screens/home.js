@@ -5,6 +5,7 @@ import Country from "../components/country/country";
 import Search from "components/libs/search";
 import { useState } from "react";
 import { useEffect } from "react";
+import Filter from "components/libs/Filter";
 
 const StyledDiv = styled.div`
   margin: -9px;
@@ -13,6 +14,19 @@ const StyledDiv = styled.div`
   min-height: 100vh;
   background: var(--colors-background);
 `;
+
+const SearchDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const CountryDiv = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+`;
+
 const THEME_MODE = {
   light: "light",
   dark: "dark",
@@ -46,11 +60,32 @@ export default function Home() {
   return (
     <StyledDiv>
       <Header clicked={handleClick} modes={modeName} />
-      <Search />
-      <Country />
-      <Country />
-      <Country />
-      <Country />
+      <SearchDiv>
+        <Search />
+        <Filter />
+      </SearchDiv>
+      <CountryDiv>
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+        <Country />
+      </CountryDiv>
     </StyledDiv>
   );
 }

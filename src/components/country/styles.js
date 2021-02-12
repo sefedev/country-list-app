@@ -9,8 +9,10 @@ const StyledDiv = styled.div`
   flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
-  margin: 50px;
-  max-width: 18em;
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  width: 18em;
   height: 23em;
 `;
 

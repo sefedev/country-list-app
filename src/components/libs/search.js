@@ -30,12 +30,20 @@ const Div = styled.div`
 const FormInput = styled.input`
   padding: 15px;
   border: 1px solid ${gray};
+  color: var(--colors-text);
+  background: var(--colors-background);
   border-right: none;
+  font-size: 20px;
   min-width: 300px;
+
+  :focus {
+    border: 1px solid red;
+  }
 `;
 
 const FormButton = styled.button`
   padding: 15px;
+  font-size: 20px;
   border-left: none;
   border-right: 1px solid ${gray};
   border-top: 1px solid ${gray};
