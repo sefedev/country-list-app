@@ -1,5 +1,4 @@
 export * from "./button";
-export * from "./modal";
-export * from "./form";
+export * from "./search";
 export * from "./img";
 export * from "./spinner";

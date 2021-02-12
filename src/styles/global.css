@@ -1,19 +1,48 @@
 /* clears the 'X' from Internet Explorer */
-input[type='search']::-ms-clear {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+body[data-theme="dark"] {
+  --colors-text: white;
+  --colors-background: rgb(63, 63, 63);
+  --header-comp: red;
+}
+
+body[data-theme="light"] {
+  --colors-text: black;
+  --colors-background: white;
+  --header-comp: Yellow;
+  --someOther-elementColor: rgb(0, 20, 202);
+  --shadow: hsl(0, 0%, 10%);
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type="search"]::-ms-clear {
   display: none;
   width: 0;
   height: 0;
 }
-input[type='search']::-ms-reveal {
+input[type="search"]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
 
 /* clears the 'X' from Chrome */
-input[type='search']::-webkit-search-decoration,
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-results-button,
-input[type='search']::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  transition: 0.3s ease;
 }
